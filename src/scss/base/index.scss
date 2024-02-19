@@ -1,0 +1,105 @@
+@use '../abstracts';
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition:all .2s linear;
+    outline: none;
+    position: relative;
+    font-weight: normal;
+
+}
+html {
+    // min-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    transition:all .2s linear;
+}
+
+body {
+    min-height: 100vh;
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto !important;
+    background: #2b2559;
+    font-family: abstracts.$font-principal;
+    overflow: hidden;
+}
+
+
+h1, h2, h3, h4, h5, h6,  table, td, textarea{
+    font-family: abstracts.$font-principal;
+}
+
+p, a, span, input{
+font-family: abstracts.$font-secundaria;
+font-size: 15px;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: abstracts.$fontWeight-lg;
+    font-size: abstracts.$fontSize-titulo !important;
+    line-height: 53.35px;
+    font-style: Bold;
+    @media(max-width:1350px){
+        font-size: abstracts.$fontSize-titulo-md !important;
+    }
+    @media(max-width: 600px){
+        font-size: abstracts.$fontSize-subtitulo !important;
+    }
+}
+
+h3 {
+    font-style: normal;
+    font-weight: abstracts.$fontWeight-md;
+    font-size: abstracts.$fontSize-subtitulo;
+    line-height: 47px;
+    font-style: Bold;
+    @media(max-width: 600px){
+        font-size: abstracts.$fontSize-subtituloMd;
+    }
+    @media(max-width: 490px){
+        font-size: abstracts.$fontSize-textMd;
+    }
+}
+
+h4 {
+    font-size: abstracts.$fontSize-textMd;
+    font-weight: abstracts.$fontWeight-md;
+    line-height: 23.71px;
+}
+h5{
+    font-size: abstracts.$fontSize-textMdS;
+    font-weight: abstracts.$fontWeight-md;
+    font-style: normal;
+    line-height: 24px;
+}
+
+h6{
+    font-size: abstracts.$fontSize-textSm;
+    opacity: 0.9;
+}
+
+p{
+    font-size: abstracts.$fontSize-textMd;
+    font-weight: abstracts.$fontWeight-md;
+    line-height: 23.71px;
+    @media(max-width: 700px){
+        font-size: abstracts.$spanWidth;
+    }
+    @media(max-width: 490px){
+    }
+}
+
+span{
+   font-size: abstracts.$spanWidth;
+   font-weight: abstracts.$fontWeight-lg;
+   font-style: Bold;
+   line-height: 22.23px;
+}

@@ -1,0 +1,9 @@
+@use '../abstracts';
+
+@mixin btnMix($background){
+    width: 150px;
+    height: 80px;
+    padding: 1em;
+    font-family: abstracts.$font-principal;
+    background: $background
+}
