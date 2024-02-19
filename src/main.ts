@@ -1,3 +1,4 @@
+// @ts-ignore
 import {MotionPlugin } from '@vueuse/motion'
 
 import { createApp } from 'vue'
