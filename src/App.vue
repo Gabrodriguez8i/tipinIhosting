@@ -1,5 +1,4 @@
 <template>
-
   <main id="viewHome">
     <HeaderApp/>
     <NotificationBar :element="notification"/>

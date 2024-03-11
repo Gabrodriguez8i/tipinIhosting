@@ -87,12 +87,12 @@ const sendMsg = async() => {
             if( !validateInput(expresiones.name, message.name) || !validateInput(expresiones.email, message.email)  ) throw new Error("Campos invalidos");
 
             const response = await useContactUs.SendConsult(message);
-            console.log("sendMsg: response: ", response);
+            // console.log("sendMsg: response: ", response);
             notification.text = response.data.message;
             notification.status = response.status;
 
         } catch (error) {
-           console.log("sendMsg error: ", error);
+          //  console.log("sendMsg error: ", error);
             // if(error.response.status == 422){
                 notification.text = 'datos invalidos';
                 notification.status = 401
